@@ -8,4 +8,5 @@ from . import views
 #The last arg gives the name post_list to the URL. We want to name each URL.
 urlpatterns = [
     path('', views.post_list, name='post_list'),
+    path('post/<int:pk>/', views.post_detail, name='post_detail'),
 ]
